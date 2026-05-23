@@ -9,7 +9,7 @@ echo 'experimental-features = nix-command flakes' | sudo tee -a /etc/nix/nix.con
 
 ### 2. Clone and enter repo
 ```bash
-git clone <your-repo> ~/nixos-config
+git clone https://github.com/bllryy/nixos-framework-13.git ~/nixos-config
 cd ~/nixos-config
 ```
 
