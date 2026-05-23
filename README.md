@@ -43,17 +43,6 @@ sudo nixos-rebuild switch --flake .#framework
 
 ---
 
-## Fresh install (from ISO)
-
-```bash
-# Partition and mount disks at /mnt, then:
-git clone <your-repo>
-cd nixos-config
-bash install.sh
-```
-
----
-
 ## File structure
 
 ```
