@@ -32,7 +32,7 @@
       git vim wget curl
       firefox kitty
       brightnessctl playerctl alacritty vesktop
-      tree go signal-desktop pavucontrol
+      tree go signal-desktop pavucontrol btop claude-code nodejs
     ];
 
     programs.steam.enable = true;
