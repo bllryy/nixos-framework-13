@@ -18,6 +18,8 @@
     services.fwupd.enable = true;
     services.fprintd.enable = true;
     services.power-profiles-daemon.enable = true;
+    #allowUnfree = true;
+    nixpkgs.config.allowUnfree = true;
 
     users.users.lily = {
       isNormalUser = true;
@@ -29,9 +31,14 @@
     environment.systemPackages = with pkgs; [
       git vim wget curl
       firefox kitty
-      brightnessctl playerctl
+      brightnessctl playerctl alacritty vesktop
+      tree go signal-desktop pavucontrol
     ];
 
-    system.stateVersion = "25.05";
+    programs.steam.enable = true;
+    
+    services.flatpak.enable = true;  
+
+    system.stateVersion = "26.05";
   };
 }
