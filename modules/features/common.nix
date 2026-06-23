@@ -23,11 +23,15 @@
     };
     programs.zsh.enable = true;
 
+    fonts.packages = with pkgs; [ nerd-fonts.iosevka ];
+
     environment.systemPackages = with pkgs; [
       git vim wget curl
       firefox kitty
       brightnessctl playerctl alacritty vesktop
-      tree go signal-desktop pavucontrol btop claude-code nodejs
+      tree go signal-desktop pavucontrol btop claude-code nodejs cmake ungoogled-chromium tree prismlauncher 
+      fastfetch keepassxc kdePackages.dolphin filezilla tmux fzf emacs pkg-config unzip vscode gcc
+      libtool 
     ];
 
     programs.steam.enable = true;
